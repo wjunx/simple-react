@@ -1,0 +1,29 @@
+{
+  "name": "simple-react",
+  "version": "1.0.0",
+  "description": "react 0-1",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .ts,.js,.jsx,.tsx --fix --quiet ./packages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/billy_wu/simple-react.git"
+  },
+  "author": "billy_wu",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "commitlint": "^17.7.1",
+    "eslint": "8.25.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.3",
+    "rollup": "^3.29.2",
+    "typescript": "^5.2.2"
+  }
+}
