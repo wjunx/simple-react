@@ -1,29 +1,43 @@
 {
-  "name": "simple-react",
-  "version": "1.0.0",
-  "description": "react 0-1",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint --ext .ts,.js,.jsx,.tsx --fix --quiet ./packages"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://gitee.com/billy_wu/simple-react.git"
-  },
-  "author": "billy_wu",
-  "license": "ISC",
-  "devDependencies": {
-    "@commitlint/cli": "^17.7.1",
-    "@commitlint/config-conventional": "^17.7.0",
-    "@typescript-eslint/eslint-plugin": "^6.7.0",
-    "@typescript-eslint/parser": "^6.7.0",
-    "commitlint": "^17.7.1",
-    "eslint": "8.25.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "husky": "^8.0.3",
-    "prettier": "^3.0.3",
-    "rollup": "^3.29.2",
-    "typescript": "^5.2.2"
-  }
+	"name": "simple-react",
+	"version": "1.0.0",
+	"description": "react 0-1",
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint --ext .ts,.js,.jsx,.tsx --fix --quiet ./packages",
+		"build:dev": "rimraf dist && rollup --bundleConfigAsCjs --config scripts/rollup/dev.config.js",
+		"demo": "vite serve demos/test-fc --config scripts/vite/vite.config.js --force"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://gitee.com/billy_wu/simple-react.git"
+	},
+	"author": "billy_wu",
+	"license": "ISC",
+	"devDependencies": {
+		"@commitlint/cli": "^17.7.1",
+		"@commitlint/config-conventional": "^17.7.0",
+		"@rollup/plugin-alias": "^5.0.1",
+		"@rollup/plugin-commonjs": "^25.0.4",
+		"@typescript-eslint/eslint-plugin": "^6.7.0",
+		"@typescript-eslint/parser": "^6.7.0",
+		"commitlint": "^17.7.1",
+		"eslint": "8.25.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-prettier": "^5.0.0",
+		"husky": "^8.0.3",
+		"prettier": "^3.0.3",
+		"rimraf": "^5.0.4",
+		"rollup": "^3.29.2",
+		"rollup-plugin-generate-package-json": "^3.2.0",
+		"rollup-plugin-typescript2": "^0.35.0",
+		"typescript": "^5.2.2",
+		"@types/react": "^18.0.24",
+		"@types/react-dom": "^18.0.8",
+		"@vitejs/plugin-react": "^2.2.0",
+		"vite": "^3.2.3"
+	},
+	"dependencies": {
+		"@rollup/plugin-replace": "^5.0.3"
+	}
 }
